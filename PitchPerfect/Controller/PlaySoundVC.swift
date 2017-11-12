@@ -9,7 +9,7 @@
 import UIKit
 import AVFoundation
 
-class PlayPitchVC: UIViewController {
+class PlaySoundVC: UIViewController {
 
     // MARK: - Properties
     @IBOutlet weak var pauseButton: UIButton!

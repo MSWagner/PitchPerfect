@@ -27,7 +27,7 @@ class RecordVC: UIViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         print("Prepare fpr segue")
         if segue.identifier == "stopRecording" {
-            let playPitchVC = segue.destination as! PlayPitchVC
+            let playPitchVC = segue.destination as! PlaySoundVC
             let recordedAudioURL = sender as! URL
             print("URL in PlayVC: \(recordedAudioURL.absoluteString)")
             playPitchVC.recordedAudioURL = recordedAudioURL

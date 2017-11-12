@@ -59,7 +59,7 @@
         <!--PlayPitchVC-->
         <scene sceneID="vD6-O3-uD7">
             <objects>
-                <viewController storyboardIdentifier="PlayPitchVC" title="Pitch Perfect" id="n5Y-p7-zKL" userLabel="PlayPitchVC" customClass="PlayPitchVC" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="PlaySoundVC" title="Pitch Perfect" id="n5Y-p7-zKL" userLabel="PlayPitchVC" customClass="PlaySoundVC" customModule="PitchPerfect" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="jIn-iq-Hbr">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="504"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
