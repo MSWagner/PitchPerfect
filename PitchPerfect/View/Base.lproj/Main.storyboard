@@ -84,46 +84,46 @@
                                             <action selector="onPause:" destination="n5Y-p7-zKL" eventType="touchUpInside" id="ne5-w3-MDT"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8OY-nF-qZA" userLabel="Fast">
+                                    <button opaque="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8OY-nF-qZA" userLabel="Fast">
                                         <rect key="frame" x="70" y="0.0" width="90" height="90"/>
                                         <state key="normal" image="Fast"/>
                                         <connections>
-                                            <action selector="onFast:" destination="n5Y-p7-zKL" eventType="touchUpInside" id="obD-nU-jLC"/>
+                                            <action selector="playSoundForButton:" destination="n5Y-p7-zKL" eventType="touchUpInside" id="Lr2-O0-jF1"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="1000" verticalHuggingPriority="1000" horizontalCompressionResistancePriority="1000" verticalCompressionResistancePriority="1000" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gj7-UI-wNm" userLabel="Slow">
                                         <rect key="frame" x="160" y="0.0" width="90" height="90"/>
                                         <state key="normal" image="Slow"/>
                                         <connections>
-                                            <action selector="onSlow:" destination="n5Y-p7-zKL" eventType="touchUpInside" id="vNG-LH-4ds"/>
+                                            <action selector="playSoundForButton:" destination="n5Y-p7-zKL" eventType="touchUpInside" id="d9H-86-SkD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmW-Sp-yXD" userLabel="Echo">
+                                    <button opaque="NO" tag="4" contentMode="scaleAspectFit" preservesSuperviewLayoutMargins="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xmW-Sp-yXD" userLabel="Echo">
                                         <rect key="frame" x="10" y="90" width="90" height="90"/>
                                         <state key="normal" image="Echo"/>
                                         <connections>
-                                            <action selector="onEcho:" destination="n5Y-p7-zKL" eventType="touchUpInside" id="X7E-qe-HCy"/>
+                                            <action selector="playSoundForButton:" destination="n5Y-p7-zKL" eventType="touchUpInside" id="uf9-Sq-SSc"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbV-vp-uc7" userLabel="Reverb">
+                                    <button opaque="NO" tag="5" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DbV-vp-uc7" userLabel="Reverb">
                                         <rect key="frame" x="219.5" y="89.5" width="90" height="90"/>
                                         <state key="normal" image="Reverb"/>
                                         <connections>
-                                            <action selector="onReverb:" destination="n5Y-p7-zKL" eventType="touchUpInside" id="H3W-vA-V0H"/>
+                                            <action selector="playSoundForButton:" destination="n5Y-p7-zKL" eventType="touchUpInside" id="TwM-la-TEy"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xk6-HT-6Ik" userLabel="LowPitch">
+                                    <button opaque="NO" tag="3" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Xk6-HT-6Ik" userLabel="LowPitch">
                                         <rect key="frame" x="70" y="180" width="90" height="90"/>
                                         <state key="normal" image="LowPitch"/>
                                         <connections>
-                                            <action selector="onLowPitch:" destination="n5Y-p7-zKL" eventType="touchUpInside" id="Igg-RX-64L"/>
+                                            <action selector="playSoundForButton:" destination="n5Y-p7-zKL" eventType="touchUpInside" id="XLU-3T-d0K"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wk7-rP-S5H" userLabel="HighPitch">
+                                    <button opaque="NO" tag="2" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wk7-rP-S5H" userLabel="HighPitch">
                                         <rect key="frame" x="160" y="180" width="90" height="90"/>
                                         <state key="normal" image="HighPitch"/>
                                         <connections>
-                                            <action selector="onHighPitch:" destination="n5Y-p7-zKL" eventType="touchUpInside" id="fsC-gR-hzj"/>
+                                            <action selector="playSoundForButton:" destination="n5Y-p7-zKL" eventType="touchUpInside" id="v2D-Zg-4cy"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -351,7 +351,13 @@
                         </variation>
                     </view>
                     <connections>
+                        <outlet property="echoButton" destination="xmW-Sp-yXD" id="bgE-OM-gr2"/>
+                        <outlet property="fastButton" destination="8OY-nF-qZA" id="3nL-gG-oVI"/>
+                        <outlet property="highButton" destination="wk7-rP-S5H" id="ZyH-O6-Qr5"/>
+                        <outlet property="lowButton" destination="Xk6-HT-6Ik" id="LFU-RH-GGI"/>
                         <outlet property="pauseButton" destination="jPp-sK-pj6" id="ksP-a4-3YB"/>
+                        <outlet property="reverbButton" destination="DbV-vp-uc7" id="Uzo-EL-cnT"/>
+                        <outlet property="slowButton" destination="gj7-UI-wNm" id="RqJ-27-a3i"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hXB-Ap-mhl" userLabel="First Responder" sceneMemberID="firstResponder"/>
