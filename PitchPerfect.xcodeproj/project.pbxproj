@@ -12,9 +12,7 @@
 		D353A9D61FB866EC0080E013 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D353A9D41FB866EC0080E013 /* Main.storyboard */; };
 		D353A9D81FB866EC0080E013 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D353A9D71FB866EC0080E013 /* Assets.xcassets */; };
 		D353A9DB1FB866EC0080E013 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D353A9D91FB866EC0080E013 /* LaunchScreen.storyboard */; };
-		D353A9E61FB8803C0080E013 /* PitchCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353A9E51FB8803C0080E013 /* PitchCollectionViewCell.swift */; };
-		D353A9E81FB880830080E013 /* PitchCollectionReusableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353A9E71FB880830080E013 /* PitchCollectionReusableView.swift */; };
-		D353A9EA1FB880CD0080E013 /* PitchPlayCollectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D353A9E91FB880CD0080E013 /* PitchPlayCollectionVC.swift */; };
+		D390C6311FB8DFA200884C76 /* PlayPitchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D390C6301FB8DFA200884C76 /* PlayPitchVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,9 +23,7 @@
 		D353A9D71FB866EC0080E013 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D353A9DA1FB866EC0080E013 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D353A9DC1FB866EC0080E013 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D353A9E51FB8803C0080E013 /* PitchCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchCollectionViewCell.swift; sourceTree = "<group>"; };
-		D353A9E71FB880830080E013 /* PitchCollectionReusableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchCollectionReusableView.swift; sourceTree = "<group>"; };
-		D353A9E91FB880CD0080E013 /* PitchPlayCollectionVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PitchPlayCollectionVC.swift; sourceTree = "<group>"; };
+		D390C6301FB8DFA200884C76 /* PlayPitchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayPitchVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -72,8 +68,6 @@
 		D353A9E21FB867DB0080E013 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				D353A9E51FB8803C0080E013 /* PitchCollectionViewCell.swift */,
-				D353A9E71FB880830080E013 /* PitchCollectionReusableView.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -82,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				D353A9D21FB866EC0080E013 /* RecordVC.swift */,
-				D353A9E91FB880CD0080E013 /* PitchPlayCollectionVC.swift */,
+				D390C6301FB8DFA200884C76 /* PlayPitchVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -170,10 +164,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D353A9D31FB866EC0080E013 /* RecordVC.swift in Sources */,
-				D353A9E61FB8803C0080E013 /* PitchCollectionViewCell.swift in Sources */,
-				D353A9E81FB880830080E013 /* PitchCollectionReusableView.swift in Sources */,
 				D353A9D11FB866EC0080E013 /* AppDelegate.swift in Sources */,
-				D353A9EA1FB880CD0080E013 /* PitchPlayCollectionVC.swift in Sources */,
+				D390C6311FB8DFA200884C76 /* PlayPitchVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
