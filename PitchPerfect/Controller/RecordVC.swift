@@ -63,11 +63,11 @@ class RecordVC: UIViewController {
 
     // MARK: - UI Configuration Function
     private func configureUI(_ recordState: Bool) {
-        stopButton.isHidden = recordState
-        recordButton.isHidden = !recordState
+        stopButton.isHidden = !recordState
+        recordButton.isHidden = recordState
 
-        stopButton.isUserInteractionEnabled = !recordState
-        recordButton.isUserInteractionEnabled = recordState
+        stopButton.isUserInteractionEnabled = recordState
+        recordButton.isUserInteractionEnabled = !recordState
 
         switch recordState {
         case false: recordLabel.text = "Tap to start recording"
