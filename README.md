@@ -2,7 +2,7 @@
 
 PitchPerfect is a project for the **Udacity iOS Developer Nanodegree**.
 
-Users can record voices using the device microphone and are then able to play the recorded voice with differenct modulations:
+Users can record voices using the device microphone and are able to play the recorded voices with differenct modulations:
 - **Slow:** 0.5 rate
 - **Fast:** 1.5 rate
 - **Heigh:** 1000 pitch
