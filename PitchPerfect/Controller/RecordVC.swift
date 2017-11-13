@@ -30,6 +30,10 @@ class RecordVC: UIViewController {
             let recordedAudioURL = sender as! URL
             print("URL in PlayVC: \(recordedAudioURL.absoluteString)")
             playPitchVC.recordedAudioURL = recordedAudioURL
+
+            let backItem = UIBarButtonItem()
+            backItem.title = "Back"
+            navigationItem.backBarButtonItem = backItem
         }
     }
 
