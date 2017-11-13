@@ -11,7 +11,7 @@ import AVFoundation
 
 class PlaySoundVC: UIViewController {
 
-    // MARK: - Properties
+    // MARK: - IBOutlet Properties
     @IBOutlet weak var pauseButton: UIButton!
     @IBOutlet weak var fastButton: UIButton!
     @IBOutlet weak var slowButton: UIButton!
@@ -19,7 +19,8 @@ class PlaySoundVC: UIViewController {
     @IBOutlet weak var reverbButton: UIButton!
     @IBOutlet weak var lowButton: UIButton!
     @IBOutlet weak var highButton: UIButton!
-    
+
+    // MARK: - Audio Properties
     var recordedAudioURL: URL!
     var audioFile:AVAudioFile!
     var audioEngine:AVAudioEngine!
@@ -29,7 +30,8 @@ class PlaySoundVC: UIViewController {
     enum ButtonType: Int {
         case slow = 0, fast, chipmunk, vader, echo, reverb
     }
-    
+
+    // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
         self.navigationController?.navigationBar.tintColor = UIColor.white

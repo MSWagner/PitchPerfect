@@ -11,13 +11,15 @@ import AVFoundation
 
 class RecordVC: UIViewController {
 
-    // MARK: - Properties
+    // MARK: - IBOutlet Properties
     @IBOutlet weak var recordLabel: UILabel!
     @IBOutlet weak var stopButton: UIButton!
     @IBOutlet weak var recordButton: UIButton!
 
+    // MARK: - AV Properties
     var audioRecorder: AVAudioRecorder!
 
+    // MARK: - Lifecycle Functions
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -28,9 +30,11 @@ class RecordVC: UIViewController {
         if segue.identifier == "stopRecording" {
             let playPitchVC = segue.destination as! PlaySoundVC
             let recordedAudioURL = sender as! URL
-            print("URL in PlayVC: \(recordedAudioURL.absoluteString)")
             playPitchVC.recordedAudioURL = recordedAudioURL
 
+            print("URL in PlayVC: \(recordedAudioURL.absoluteString)")
+
+            // Set BackItem Title
             let backItem = UIBarButtonItem()
             backItem.title = "Back"
             navigationItem.backBarButtonItem = backItem
@@ -67,9 +71,11 @@ class RecordVC: UIViewController {
 
     // MARK: - UI Configuration Function
     private func configureUI(_ recordState: Bool) {
+        // Show only one Button (Record/Stop)
         stopButton.isHidden = !recordState
         recordButton.isHidden = recordState
 
+        // Enable Interaction for only one Button (Record/Stop)
         stopButton.isUserInteractionEnabled = recordState
         recordButton.isUserInteractionEnabled = !recordState
 
