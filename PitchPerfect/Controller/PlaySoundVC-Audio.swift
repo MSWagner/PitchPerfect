@@ -9,11 +9,9 @@ import UIKit
 import AVFoundation
 
 // MARK: - PlaySoundsViewController: AVAudioPlayerDelegate
-
 extension PlaySoundVC: AVAudioPlayerDelegate {
     
     // MARK: Alerts
-    
     struct Alerts {
         static let DismissAlert = "Dismiss"
         static let RecordingDisabledTitle = "Recording Disabled"
@@ -28,11 +26,9 @@ extension PlaySoundVC: AVAudioPlayerDelegate {
     }
     
     // MARK: PlayingState (raw values correspond to sender tags)
-    
     enum PlayingState { case playing, notPlaying }
     
     // MARK: Audio Functions
-    
     func setupAudio() {
         // initialize (recording) audio file
         do {
@@ -115,7 +111,6 @@ extension PlaySoundVC: AVAudioPlayerDelegate {
     }
     
     func stopAudio() {
-        
         if let audioPlayerNode = audioPlayerNode {
             audioPlayerNode.stop()
         }
@@ -133,7 +128,6 @@ extension PlaySoundVC: AVAudioPlayerDelegate {
     }
     
     // MARK: Connect List of Audio Nodes
-    
     func connectAudioNodes(_ nodes: AVAudioNode...) {
         for x in 0..<nodes.count-1 {
             audioEngine.connect(nodes[x], to: nodes[x+1], format: audioFile.processingFormat)
@@ -141,15 +135,15 @@ extension PlaySoundVC: AVAudioPlayerDelegate {
     }
     
     // MARK: UI Functions
-
     func configureUI(_ playState: PlayingState) {
         switch(playState) {
         case .playing:
             setPlayButtonsEnabled(false)
             pauseButton.isEnabled = true
+            pauseButton.isHidden = false
         case .notPlaying:
             setPlayButtonsEnabled(true)
-            pauseButton.isEnabled = false
+            pauseButton.isHidden = true
         }
     }
     

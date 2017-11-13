@@ -20,7 +20,6 @@ class RecordVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
     }
 
     // MARK: - Navigation
@@ -34,8 +33,9 @@ class RecordVC: UIViewController {
         }
     }
 
+    // MARK: - Record/Stop Function
     @IBAction func onRecord(_ sender: Any) {
-        switchButton()
+        configureUI(true)
         
         let dirPath = NSSearchPathForDirectoriesInDomains(.documentDirectory, .userDomainMask, true)[0] as String
         let recordingName = "recordedVoice.wav"
@@ -54,23 +54,24 @@ class RecordVC: UIViewController {
     }
 
     @IBAction func onStop(_ sender: Any) {
-        switchButton()
+        configureUI(false)
 
         audioRecorder.stop()
         let audioSession = AVAudioSession.sharedInstance()
         try! audioSession.setActive(false)
     }
 
-    private func switchButton() {
-        stopButton.isHidden = !stopButton.isHidden
-        recordButton.isHidden = !recordButton.isHidden
+    // MARK: - UI Configuration Function
+    private func configureUI(_ recordState: Bool) {
+        stopButton.isHidden = recordState
+        recordButton.isHidden = !recordState
 
-        stopButton.isUserInteractionEnabled = !stopButton.isUserInteractionEnabled
-        recordButton.isUserInteractionEnabled = !recordButton.isUserInteractionEnabled
+        stopButton.isUserInteractionEnabled = !recordState
+        recordButton.isUserInteractionEnabled = recordState
 
-        switch stopButton.isHidden {
-        case true: recordLabel.text = "Tap to start recording"
-        case false: recordLabel.text = "Recording in Progress"
+        switch recordState {
+        case false: recordLabel.text = "Tap to start recording"
+        case true: recordLabel.text = "Recording in Progress"
         }
     }
 }

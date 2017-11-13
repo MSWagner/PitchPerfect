@@ -40,6 +40,7 @@ class PlaySoundVC: UIViewController {
         configureUI(.notPlaying)
     }
 
+    // MARK: - IBAction Functions
     @IBAction func playSoundForButton(_ sender: UIButton) {
         switch(ButtonType(rawValue: sender.tag)!) {
         case .slow:
